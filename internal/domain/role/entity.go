@@ -1,6 +1,6 @@
 package role
 
 type Role struct {
-	ID   int
+	ID   uint
 	Name RoleName
 }

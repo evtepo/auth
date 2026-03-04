@@ -1,15 +1,14 @@
 package user
 
 import (
-	"github.com/evtepo/auth/internal/domain/role"
+	"github.com/evtepo/auth/internal/domain/base"
 )
 
 type User struct {
-	ID       int
-	Usename  Usename
-	Email    Email
-	Password Password
-	RoleID   []role.Role
-	IsDel    bool
-	IsAdmin  bool
+	base.BaseModel
+	Username  Username
+	Email     Email
+	Password  Password
+	RoleID    uint
+	IsAdmin   bool
 }
